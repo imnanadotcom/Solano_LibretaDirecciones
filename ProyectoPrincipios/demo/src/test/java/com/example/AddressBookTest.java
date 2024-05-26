@@ -2,6 +2,7 @@ package com.example;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import java.util.List;
+
 public class AddressBookTest {
 
     @Test
@@ -40,14 +41,14 @@ public class AddressBookTest {
     @Test
     public void testGetAllRegisters() {
         AddressBook addressBook = new AddressBook();
-        AddressEntry entry1 = new AddressEntry("John", "Luisa", "123 Main St", "Anytown", "CA", 12345, "555-1234", "john.Luisa@example.com");
-        AddressEntry entry2 = new AddressEntry("Maria", "Smith", "789 Oak St", "AnMina", "FL", 11223, "555-9876", "Maria.smith@example.com");
-        addressBook.addNewRegister(entry1);
-        addressBook.addNewRegister(entry2);
+        AddressEntry entrada1 = new AddressEntry("Pepe", "Martinez", "Rio Coatzacoalcos", "Coatzacoalcos", "Veracruz", 12345, "92114920239", "cualquiera@gmail.com");
+        AddressEntry entrada2 = new AddressEntry("Maria", "Luisa", "Rio Bravo", "Mina", "VER", 98763, "922345667", "maria@gmail");
+        addressBook.addNewRegister(entrada1);
+        addressBook.addNewRegister(entrada2);
         List<AddressEntry> allEntries = addressBook.getAllRegisters();
         assertEquals(2, allEntries.size());
-        assertTrue(allEntries.contains(entry1));
-        assertTrue(allEntries.contains(entry2));
+        assertTrue(allEntries.contains(entrada1));
+        assertTrue(allEntries.contains(entrada2));
     }
 
 }
