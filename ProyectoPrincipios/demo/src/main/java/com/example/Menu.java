@@ -18,37 +18,37 @@ public class Menu {
         while (exit == false) {
             System.out.println("------------------------------------");
             System.out.println("Elige una opción del menú:");
-            System.out.println("1) Agregar nuevo registro");
-            System.out.println("2) Eliminar registro");
-            System.out.println("3) Buscar registro por apellido");
-            System.out.println("4) Mostrar todos los registros");
-            System.out.println("5) Cargar registros desde un archivo");
-            System.out.println("6) Salir");
+            System.out.println("a) Cargar de archivo");
+            System.out.println("b) Agregar");
+            System.out.println("c) Eliminar");
+            System.out.println("d) Buscar");
+            System.out.println("e) Mostar");
+            System.out.println("f) Salir");
             System.out.println("-------------------------------------");
 
-            int choice = Integer.parseInt(scanner.nextLine());
+            String choice = scanner.nextLine();
 
             switch (choice) {
-                case 1:
-                    addNewRegister(scanner);
-                    break;
-                case 2:
-                    removeRegister(scanner);
-                    break;
-                case 3:
-                    searchRegister(scanner);
-                    break;
-                case 4:
-                    showAllRegisters();
-                    break;
-                case 5:
+                case "a":
                     openTXT(scanner);
                     break;
-                case 6:
+                case "b":
+                    addNewRegister(scanner);
+                    break;
+                case "c":
+                    removeRegister(scanner);
+                    break;
+                case "d":
+                    searchRegister(scanner);
+                    break;
+                case "e":
+                    showAllRegisters();
+                    break;
+                case "6":
                     exit = true;
                     break;
                 default:
-                    System.out.println("Elige una opción del 1 al 6");
+                    System.out.println("Elige una opción entre a y b");
             }
         }
     }
