@@ -1,4 +1,4 @@
-package com.example;
+package address.data;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import java.util.List;

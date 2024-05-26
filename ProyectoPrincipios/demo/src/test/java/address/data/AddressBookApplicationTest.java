@@ -1,4 +1,4 @@
-package com.example;
+package address.data;
 
 public class AddressBookApplicationTest {
     
