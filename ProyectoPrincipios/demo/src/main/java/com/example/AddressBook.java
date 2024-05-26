@@ -70,5 +70,10 @@ public class AddressBook {
         }
         return result;
     }
+
+    public void openTXT(String filename) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'openTXT'");
+    }
     
 }
