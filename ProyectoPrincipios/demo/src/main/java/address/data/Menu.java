@@ -1,4 +1,4 @@
-package com.example;
+package address.data;
 import java.util.List;
 import java.util.Scanner;
 
