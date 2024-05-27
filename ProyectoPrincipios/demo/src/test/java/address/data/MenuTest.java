@@ -17,11 +17,9 @@ public class MenuTest {
     }
 
     @Test
-    public void testAddNewRegister() {
-        // Create a scanner with predefined input
+    public void addNewRegisterTest() {
         Scanner scanner = new Scanner("Juan\nMartinez\nRio Coatzacoalcos\nCoatzacoalcos\nVER\n96535\ncualquiera@gmail.com\n9211492939\n");
 
-        // Call the method directly
         menu.addNewRegister(scanner);
 
         List<AddressEntry> allEntries = addressBook.getAllRegisters();
@@ -32,8 +30,7 @@ public class MenuTest {
     }
 
     @Test
-    public void testRemoveRegister() {
-        // Add an entry first
+    public void removeRegisterTest() {
         AddressEntry entrada = new AddressEntry("Maria", "Luisa", "Rio Bravo", "Mina", "VER", 98763, "922345667", "maria@gmail");
         addressBook.addNewRegister(entrada);
 
@@ -48,7 +45,7 @@ public class MenuTest {
     }
 
     @Test
-    public void testSearchRegister() {
+    public void searchRegisterTest() {
 
         AddressEntry entrada1 = new AddressEntry("Pepe", "Martinez", "Rio Coatzacoalcos", "Coatzacoalcos", "Veracruz", 12345, "92114920239", "cualquiera@gmail.com");
         AddressEntry entrada2 = new AddressEntry("Maria", "Luisa", "Rio Bravo", "Mina", "VER", 98763, "922345667", "maria@gmail");
@@ -66,7 +63,7 @@ public class MenuTest {
     }
 
     @Test
-    public void testShowAllRegisters() {
+    public void showAllRegistersTest() {
 
         AddressEntry entrada1 = new AddressEntry("Pepe", "Martinez", "Rio Coatzacoalcos", "Coatzacoalcos", "Veracruz", 12345, "92114920239", "cualquiera@gmail.com");
         AddressEntry entrada2 = new AddressEntry("Maria", "Luisa", "Rio Bravo", "Mina", "VER", 98763, "922345667", "maria@gmail");

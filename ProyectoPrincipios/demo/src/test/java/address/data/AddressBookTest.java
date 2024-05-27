@@ -6,7 +6,7 @@ import java.util.List;
 public class AddressBookTest {
 
     @Test
-    public void testAddNewRegister() {
+    public void addNewRegisterTest() {
         AddressBook addressBook = new AddressBook();
         AddressEntry entrada = new AddressEntry("Pepe", "Martinez", "Rio Coatzacoalcos", "Coatzacoalcos", "Veracruz", 12345, "92114920239", "cualquiera@gmail.com");
         addressBook.addNewRegister(entrada);
@@ -16,7 +16,7 @@ public class AddressBookTest {
     }
 
     @Test
-    public void testRemoveRegister() {
+    public void removeRegisterTest() {
         AddressBook addressBook = new AddressBook();
         AddressEntry entrada = new AddressEntry("Maria", "Luisa", "Rio Bravo", "Mina", "VER", 98763, "922345667", "maria@gmail");
         addressBook.addNewRegister(entrada);
@@ -27,7 +27,7 @@ public class AddressBookTest {
     }
 
     @Test
-    public void testSearchRegister() {
+    public void searchRegisterTest() {
         AddressBook addressBook = new AddressBook();
         AddressEntry entrada1 = new AddressEntry("Pepe", "Martinez", "Rio Coatzacoalcos", "Coatzacoalcos", "Veracruz", 12345, "92114920239", "cualquiera@gmail.com");
         AddressEntry entrada2 = new AddressEntry("Maria", "Luisa", "Rio Bravo", "Mina", "VER", 98763, "922345667", "maria@gmail");
@@ -39,7 +39,7 @@ public class AddressBookTest {
     }
 
     @Test
-    public void testGetAllRegisters() {
+    public void getAllRegistersTest() {
         AddressBook addressBook = new AddressBook();
         AddressEntry entrada1 = new AddressEntry("Pepe", "Martinez", "Rio Coatzacoalcos", "Coatzacoalcos", "Veracruz", 12345, "92114920239", "cualquiera@gmail.com");
         AddressEntry entrada2 = new AddressEntry("Maria", "Luisa", "Rio Bravo", "Mina", "VER", 98763, "922345667", "maria@gmail");

@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 public class AddressEntryTest {
     
     @Test
-    public void testConstructorAndGetters() {
+    public void GettersTest() {
         AddressEntry entrada = new AddressEntry("Pepe", "Martinez", "Rio Coatzacoalcos", "Coatzacoalcos", "Veracruz", 12345, "92114920239", "cualquiera@gmail.com");
         
         assertEquals("Pepe", entrada.getFirstName());
@@ -20,7 +20,7 @@ public class AddressEntryTest {
     }
     
     @Test
-    public void testSetters() {
+    public void settersTest() {
         AddressEntry entrada = new AddressEntry("Pepe", "Martinez", "Rio Coatzacoalcos", "Coatzacoalcos", "Veracruz", 12345, "92114920239", "cualquiera@gmail.com");
         
         entrada.setFirstName("Jane");
@@ -34,7 +34,7 @@ public class AddressEntryTest {
     }
     
     @Test
-    public void testToString() {
+    public void toStringTest() {
         AddressEntry entrada = new AddressEntry("Pepe", "Martinez", "Rio Coatzacoalcos", "Coatzacoalcos", "Veracruz", 12345, "92114920239", "cualquiera@gmail.com");
         String expected = "Pepe Martinez\nRio Coatzacoalcos, Coatzacoalcos, Veracruz 12345\n92114920239\ncualquiera@gmail.com";
         
